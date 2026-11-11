@@ -1,0 +1,124 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TechForge. Groupe de technologie et d’ingénierie au Bénin. Mobilité autonome, technologies d’assistance et systèmes industriels."><meta name="theme-color" content="#06060b"><title>Des machines construites au Bénin — TechForge</title><link rel="icon" href="/techforge/symbol.svg" type="image/svg+xml"><link rel="preload" href="/techforge/geist.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/techforge/styles.css"><script src="/techforge/app.js" defer></script></head><body><a class="skip" href="#contenu">Aller au contenu</a><header class="header"><a class="wordmark" href="/techforge/" aria-label="TechForge, accueil"><img src="/techforge/symbol.svg" alt="" width="29" height="29">techforge</a><span class="clock" id="clock" hidden></span><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button><nav id="navigation" aria-label="Navigation principale"><a href="/techforge/#vision">Le groupe</a><a href="/techforge/#programmes">Programmes</a><a href="/techforge/#approche">Approche</a><a href="/techforge/actualites">Journal</a></nav></header><main id="contenu"><svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="tf-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1100" y2="420"><stop offset="0" stop-color="#ff7a18"/><stop offset=".5" stop-color="#ff3d81"/><stop offset="1" stop-color="#7c4dff"/></linearGradient>
+<linearGradient id="tf-grad-s" gradientUnits="userSpaceOnUse" x1="150" y1="0" x2="550" y2="450"><stop offset="0" stop-color="#ff7a18"/><stop offset=".5" stop-color="#ff3d81"/><stop offset="1" stop-color="#7c4dff"/></linearGradient>
+</defs></svg>
+
+<section class="hero">
+<div class="hero-copy">
+<p class="badge"><i class="pulse" aria-hidden="true"></i>Groupe d’ingénierie au Bénin</p>
+<h1>Des machines pensées, codées et <span class="grad">construites au Bénin.</span></h1>
+<p class="hero-lead">TechForge travaille sur un véhicule autonome, des prothèses robotisées et des systèmes industriels. Du premier calcul jusqu’à l’objet fini.</p>
+<div class="hero-actions"><a class="btn accent" href="#programmes">Voir les programmes</a><a class="btn secondary" href="/techforge/actualites">Lire le journal</a></div>
+</div>
+<div class="stage" id="stage"><div class="stage-frame">
+<canvas id="scene" role="img" aria-label="Simulation animée : un véhicule en nuage de points émet des ondes qui révèlent les obstacles autour de lui."></canvas>
+<dl class="hud" aria-hidden="true">
+<div><dt>Cap</dt><dd id="hud-yaw">000°</dd></div>
+<div><dt>Objets détectés</dt><dd id="hud-obj">0</dd></div>
+<div><dt>Images/s</dt><dd id="hud-fps">00</dd></div>
+</dl>
+<p class="scene-note">Simulation de perception, étude de concept. <span class="drag-hint">Faites glisser pour tourner.</span></p>
+</div></div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+<span>Perception</span><span>Navigation</span><span>Systèmes embarqués</span><span>Biomécanique</span><span>Actionnement</span><span>Automatisation</span><span>Instrumentation</span><span>Simulation</span>
+<span>Perception</span><span>Navigation</span><span>Systèmes embarqués</span><span>Biomécanique</span><span>Actionnement</span><span>Automatisation</span><span>Instrumentation</span><span>Simulation</span>
+</div></div>
+
+<section class="section" id="vision">
+<div class="intro-body">
+<h2 data-reveal>Une idée prend de la valeur quand elle roule, quand elle marche, quand elle tourne.</h2>
+<div class="intro-text" data-reveal>
+<p>TechForge est un groupe de technologie et d’ingénierie installé au Bénin. Nous partons de besoins concrets et nous les transformons en machines que l’on peut construire, utiliser et faire évoluer.</p>
+<p>Chez nous, mécanique, électronique et logiciel avancent ensemble, sur le même établi. Une idée n’est terminée que lorsqu’elle est devenue un produit fiable, que quelqu’un peut acheter et réparer.</p>
+</div>
+</div>
+<ul class="crafts">
+<li class="card" data-reveal><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg><h3>Mécanique</h3><p>Châssis, transmissions, articulations. Ce qui porte et ce qui bouge.</p></li>
+<li class="card" data-reveal><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></svg><h3>Électronique</h3><p>Cartes, capteurs, puissance. Ce qui mesure et ce qui alimente.</p></li>
+<li class="card" data-reveal><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"/></svg><h3>Logiciel</h3><p>Perception, commande, simulation. Ce qui décide.</p></li>
+<li class="card" data-reveal><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h9M8.5 20v-5"/><circle cx="8.5" cy="13" r="2"/><path d="m9.8 11.5 4.7-5.2"/><circle cx="15.8" cy="5" r="1.8"/><path d="m17.2 6.2 2.6 3.3M19.8 9.5l-2 1.2M19.8 9.5l.4 2.3"/></svg><h3>Robotique</h3><p>Les trois réunis dans une même machine, éprouvée sur banc avant le terrain.</p></li>
+</ul>
+</section>
+
+<section class="programs section" id="programmes">
+<div class="section-heading"><h2 data-reveal>Trois programmes de recherche.</h2><p data-reveal>Trois terrains différents, une même méthode : simuler, construire, mesurer, recommencer.</p></div>
+<div class="program-tabs" role="tablist" aria-label="Nos programmes">
+<button id="tab-mobility" role="tab" aria-selected="true" aria-controls="panel-mobility"><span>Mobilité autonome</span></button>
+<button id="tab-assist" role="tab" aria-selected="false" aria-controls="panel-assist" tabindex="-1"><span>Technologies d’assistance</span></button>
+<button id="tab-industry" role="tab" aria-selected="false" aria-controls="panel-industry" tabindex="-1"><span>Systèmes industriels</span></button>
+</div>
+
+<article class="program-panel card" role="tabpanel" id="panel-mobility" aria-labelledby="tab-mobility">
+<div class="program-art">
+<svg class="blueprint wide" viewBox="150 30 960 370" fill="none" role="img" aria-label="Dessin conceptuel d’une architecture de véhicule autonome">
+<g class="bp-lines"><path pathLength="1" d="M220 276l28-82 150-80 343-15 166 76 69 47-10 63-85 36-323 19-338-64Z"/><path pathLength="1" d="m248 194 301 60 357-79M549 254l9 86m-160-226 90 70 253-85M488 184l61 70m192-155 82 99M220 276l338 64 323-19"/><path pathLength="1" d="m355 209 77-56 95 35 3 43m54-56 117-43 78 50-195 39Z"/><ellipse pathLength="1" class="bp-mask" cx="341" cy="277" rx="39" ry="54" transform="rotate(-19 341 277)"/><ellipse pathLength="1" cx="341" cy="277" rx="22" ry="35" transform="rotate(-19 341 277)"/><ellipse pathLength="1" class="bp-mask" cx="776" cy="301" rx="39" ry="54" transform="rotate(19 776 301)"/><ellipse pathLength="1" cx="776" cy="301" rx="22" ry="35" transform="rotate(19 776 301)"/></g>
+<g class="bp-hot"><path pathLength="1" d="m588 180 0-35"/><ellipse pathLength="1" cx="589" cy="137" rx="17" ry="6"/><path class="bp-wave" d="M530 122q60-40 120-5"/><path class="bp-wave" d="M502 104q85-62 173-9"/><path class="bp-wave" d="M476 86q113-84 226-7"/></g>
+</svg>
+<span>Étude d’architecture, non contractuelle</span>
+</div>
+<div class="program-copy"><p class="program-code">Programme TF-01</p><h3>Penser le véhicule comme un système.</h3><p>Notre projet phare : un véhicule autonome entièrement construit au Bénin. C’est un objectif de long terme, qui relie la conception mécanique, la propulsion, la perception et le logiciel embarqué.</p><p>Nous commençons par ce qui se vérifie : la simulation, les robots mobiles et la navigation en environnement contrôlé.</p><ul class="disciplines"><li>Perception</li><li>Navigation</li><li>Systèmes embarqués</li></ul></div>
+</article>
+
+<article class="program-panel card" role="tabpanel" id="panel-assist" aria-labelledby="tab-assist" hidden>
+<div class="program-art">
+<svg class="blueprint small" viewBox="150 30 400 400" fill="none" role="img" aria-label="Étude conceptuelle d’un pied robotisé">
+<g class="bp-lines"><path pathLength="1" d="m304 55 80 9-24 113-62-5 6-117Z"/><path pathLength="1" d="m312 77 55 5-15 74-42-5Z"/><circle pathLength="1" cx="326" cy="200" r="37"/><circle pathLength="1" cx="326" cy="200" r="18"/><path pathLength="1" d="m303 228-12 94 54 7 4-101m-39 14-5 66m28-63-4 66"/><path pathLength="1" d="m291 322-47 44 17 19 154 2 41-19-12-12-95-12-4-15m-84 56 17-22 141 6"/></g>
+<g class="bp-hot"><path pathLength="1" class="bp-arc" d="M272 212a56 56 0 0 1 92-56"/></g>
+</svg>
+<span>Étude de mécanisme, non contractuelle</span>
+</div>
+<div class="program-copy"><p class="program-code">Programme TF-02</p><h3>La technologie au service du geste.</h3><p>Nous explorons la robotique d’assistance, en particulier les pieds et prothèses robotisés, pour rendre de la mobilité et de l’autonomie aux personnes qui en ont besoin.</p><p>Le travail commence sur banc d’essai, par l’étude du mouvement, et avec des professionnels de santé pour définir les usages et les validations nécessaires.</p><ul class="disciplines"><li>Biomécanique</li><li>Actionnement</li><li>Interaction</li></ul></div>
+</article>
+
+<article class="program-panel card" role="tabpanel" id="panel-industry" aria-labelledby="tab-industry" hidden>
+<div class="program-art">
+<svg class="blueprint small" viewBox="150 40 440 380" fill="none" role="img" aria-label="Schéma conceptuel de robot industriel">
+<g class="bp-lines"><path pathLength="1" d="m180 362 120-26 122 35-118 35-124-44Zm50 1v-40l74-19 69 22v44m-143-47 74 23 69-20m-69 20v60"/><circle pathLength="1" cx="300" cy="296" r="32"/><path pathLength="1" d="m273 276-49-106 38-20 64 116"/><circle pathLength="1" cx="244" cy="149" r="28"/><path pathLength="1" d="m263 129 156-54 15 38-165 54"/><circle pathLength="1" cx="440" cy="94" r="25"/><path pathLength="1" d="m457 111 37 65-25 19-42-77m42 77-1 23 19 18m7-60 25 38-5 29m-27-7 10 11m17-4 7-10"/></g>
+<g class="bp-hot"><ellipse class="bp-zone" cx="484" cy="300" rx="85" ry="28"/></g>
+</svg>
+<span>Schéma de principe, non contractuel</span>
+</div>
+<div class="program-copy"><p class="program-code">Programme TF-03</p><h3>Rendre les outils plus intelligents.</h3><p>Nous concevons des systèmes qui mesurent, pilotent et automatisent : logiciels, capteurs connectés et mécanismes adaptés aux besoins de production.</p><p>Tout part de l’usage. Nous observons une opération, nous comprenons ses contraintes, puis nous définissons une solution que l’on peut entretenir avec les ressources disponibles sur place.</p><ul class="disciplines"><li>Automatisation</li><li>Logiciel et IA</li><li>Instrumentation</li></ul></div>
+</article>
+</section>
+
+<section class="section" id="approche">
+<div class="approach-layout">
+<div class="approach-side">
+<h2 data-reveal>Un prototype est un début.</h2>
+<p class="approach-lead" data-reveal>Ce qui compte, c’est ce qui vient après.</p>
+<p data-reveal>Nous voulons des produits qui tiennent leurs promesses. Cela veut dire documenter, tester, corriger, et préparer la fabrication autant que l’usage.</p>
+<figure class="terminal" id="terminal" data-reveal>
+<div class="terminal-bar"><i></i><i></i><i></i><span>banc d’essai</span></div>
+<pre><code><span class="t-cmd">tf essai lancer --banc cheville</span>
+<span class="t-out">étalonnage des capteurs ........ ok</span>
+<span class="t-out">cycles de marche 500/500 ....... ok</span>
+<span class="t-out">écart mesure / modèle .......... dans la tolérance</span>
+<span class="t-out t-hot">rapport écrit dans essais/cheville.md</span></code></pre>
+<figcaption>Exemple illustratif : chaque essai laisse une trace écrite.</figcaption>
+</figure>
+</div>
+<ol class="steps">
+<li class="card"><span>1</span><div><h3>Comprendre</h3><p>Partir d’un besoin réel. Définir l’usage, les contraintes et ce que la solution doit accomplir.</p></div></li>
+<li class="card"><span>2</span><div><h3>Concevoir et éprouver</h3><p>Relier logiciel et matériel. Mesurer les performances, corriger les limites et documenter les essais.</p></div></li>
+<li class="card"><span>3</span><div><h3>Préparer la production</h3><p>Travailler la fiabilité, la fabrication, le coût et les validations nécessaires à la mise sur le marché.</p></div></li>
+<li class="card"><span>4</span><div><h3>Déployer et suivre</h3><p>Commercialiser, accompagner les utilisateurs et faire évoluer le produit sur la durée.</p></div></li>
+</ol>
+</div>
+</section>
+
+<section class="section news-section" id="actualites">
+<div class="section-heading"><h2 data-reveal>Le journal de l’atelier.</h2><a class="text-link" href="/techforge/actualites">Toutes les annonces</a></div>
+<p class="empty-news">Aucune annonce pour l’instant. Les premières nouvelles de l’atelier paraîtront ici.</p>
+</section>
+
+<section class="horizon-wrap" id="horizon">
+<div class="horizon">
+<p class="horizon-statement" data-reveal>Le Bénin a sa place dans les technologies qui viennent.</p>
+<p class="horizon-sub" data-reveal>Notre engagement : faire grandir ici les savoir-faire, la conception et la production technologique.</p>
+<div class="hero-actions" data-reveal><a class="btn light" href="#programmes">Voir les programmes</a><a class="btn ghost" href="#">Retour en haut</a></div>
+</div>
+</section>
+</main><footer><a class="wordmark" href="/techforge/" aria-label="TechForge, accueil"><img src="/techforge/symbol.svg" alt="" width="29" height="29">techforge</a><p>Construire, programmer, innover.</p><a class="footer-link" href="/techforge/confidentialite">Confidentialité</a><span>© 2026 TechForge</span><span class="flag" role="img" aria-label="Drapeau du Bénin"><i></i><i></i><i></i></span></footer></body></html>
